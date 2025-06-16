@@ -64,7 +64,8 @@
           <!-- ============================================================= SEARCH AREA : END ============================================================= --> </div>
         <!-- /.top-search-holder -->
         
-        <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row hidden-xs"> 
+        <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">
+
           <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
           
           <div class="dropdown dropdown-cart"> <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
@@ -170,8 +171,8 @@
          <a href="{{url('/')}}"> 
           <img src="{{asset('user\assets\images\logowhite.png')}}" style="margin-left:25%; width: 60px; height: 50px;" alt="logo"> 
         </a> 
-        <span>
-          <i style="margin-left: 28%; color: white; font-size: 15px;" class="glyphicon glyphicon-shopping-cart"></i>
+        <span class="hidden-xs">
+          <i class="glyphicon glyphicon-shopping-cart" style="margin-left: 28%; color: white; font-size: 15px;"></i>
           &nbsp;
           <sup style="color: white;">
             @guest

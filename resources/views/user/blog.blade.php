@@ -2,144 +2,76 @@
 
 @section('content')
 
-<!-- ============================================== HEADER : END ============================================== -->
 <div class="breadcrumb">
-	<div class="container">
-		<div class="breadcrumb-inner">
-			<ul class="list-inline list-unstyled">
-				<li><a href="{{url('/')}}">Home</a></li>
-				<li class='active'>Blog</li>
-			</ul>
-		</div><!-- /.breadcrumb-inner -->
-	</div><!-- /.container -->
-</div><!-- /.breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb-inner">
+            <ul class="list-inline list-unstyled">
+                <li><a href="{{url('/')}}">Home</a></li>
+                <li class='active'>About Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-<h2 class="text-center">Coming Soon...</h2>
+<div class="body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-page-content wow fadeInUp">
+                    <h1 class="text-center">About TrolleyWay</h1>
+                    <div class="about-section">
+                        <h2>Our Story</h2>
+                        <p>TrolleyWay was founded in 2023 with a simple mission: to make online shopping faster, easier, and more enjoyable for South African consumers. What started as a small e-commerce platform has grown into one of the country's most trusted online marketplaces.</p>
+                        <p>We connect buyers with sellers across South Africa, offering everything from electronics and fashion to home goods and groceries - all with convenient delivery options.</p>
+                    </div>
 
-{{--<div class="body-content">--}}
-{{--	<div class="container">--}}
-{{--		<div class="row">--}}
-{{--			<div class="blog-page">--}}
-{{--				<div class="col-md-9">--}}
-{{--				@foreach($blogs as $blog)--}}
-{{--				<?php--}}
-{{--					$comments = DB::table('blog_comments')->where('blog_id', $blog->id)->get();--}}
-{{--				?>--}}
-{{--				<div class="blog-post outer-top-bd  wow fadeInUp">--}}
-{{--					<a href="{{url('blog-details/'.$blog->id)}}">--}}
-{{--						<img class="img-responsive" src="{{asset('uploads/blog/'.$blog->image)}}" alt=""></a>--}}
-{{--					<h1><a href="{{url('blog-details/'.$blog->id)}}">{{$blog->title}}</a></h1>--}}
-{{--					<span class="author">{{$blog->author}}</span>--}}
-{{--					<span class="review">{{count($comments)}} Comments</span>--}}
-{{--					<span class="date-time">{{$blog->created_at}}</span>--}}
-{{--					<p>{{$blog->description_1}}</p>--}}
-{{--					<a href="{{url('blog-details/'.$blog->id)}}" class="btn btn-upper btn-primary read-more">read more</a>--}}
-{{--				</div>--}}
-{{--				@endforeach--}}
-{{--<div class="clearfix blog-pagination filters-container  wow fadeInUp" style="padding:0px; background:none; box-shadow:none; margin-top:15px; border:none">--}}
-{{--						--}}
-{{--	<div class="text-right">--}}
-{{--         <div class="pagination-container">--}}
-{{--	<ul class="list-inline list-unstyled">--}}
-{{--		<li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>--}}
-{{--		<li><a href="#">1</a></li>	--}}
-{{--		<li class="active"><a href="#">2</a></li>	--}}
-{{--		<li><a href="#">3</a></li>	--}}
-{{--		<li><a href="#">4</a></li>	--}}
-{{--		<li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>--}}
-{{--	</ul><!-- /.list-inline -->--}}
-{{--</div><!-- /.pagination-container -->    </div><!-- /.text-right -->--}}
+                    <div class="about-section">
+                        <h2>Why Choose TrolleyWay?</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="feature-box">
+                                    <i class="fa fa-truck"></i>
+                                    <h3>Fast Delivery</h3>
+                                    <p>We deliver to your door within 2-5 business days with our nationwide network.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-box">
+                                    <i class="fa fa-shield"></i>
+                                    <h3>Secure Shopping</h3>
+                                    <p>Your transactions are 100% secure with our advanced encryption technology.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-box">
+                                    <i class="fa fa-undo"></i>
+                                    <h3>Easy Returns</h3>
+                                    <p>Not satisfied? Return most items within 30 days for a full refund.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-{{--</div><!-- /.filters-container -->				</div>--}}
-{{--				<div class="col-md-3 sidebar">--}}
-{{--                --}}
-{{--                --}}
-{{--                --}}
-{{--					<div class="sidebar-module-container">--}}
-{{--						<div class="search-area outer-bottom-small">--}}
-{{--    <form>--}}
-{{--        <div class="control-group">--}}
-{{--            <input placeholder="Type to search" class="search-field">--}}
-{{--            <a href="#" class="search-button"></a>   --}}
-{{--        </div>--}}
-{{--    </form>--}}
-{{--</div>		--}}
+                    <div class="about-section">
+                        <h2>Our Values</h2>
+                        <ul class="values-list">
+                            <li><strong>Customer First:</strong> We put our customers at the heart of everything we do</li>
+                            <li><strong>Local Empowerment:</strong> We support South African sellers and manufacturers</li>
+                            <li><strong>Innovation:</strong> We constantly improve our platform for better shopping experiences</li>
+                            <li><strong>Integrity:</strong> We're transparent and honest in all our dealings</li>
+                        </ul>
+                    </div>
 
-{{--<div class="home-banner outer-top-n outer-bottom-xs">--}}
-{{--<a href="#">Download TrolleyWay App</a>--}}
-{{--</div>--}}
-{{--</div></div>--}}
-{{--			</div>--}}
-{{--		</div>--}}
-{{--		<!-- ============================================== BRANDS CAROUSEL ============================================== -->--}}
-{{--<div id="brands-carousel" class="logo-slider wow fadeInUp">--}}
-
-{{--		<div class="logo-slider-inner">	--}}
-{{--			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">--}}
-{{--				<div class="item m-t-15">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand1.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item m-t-10">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand2.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand3.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand4.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand5.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand6.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand2.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand4.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand1.png')}}" src="{{('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-
-{{--				<div class="item">--}}
-{{--					<a href="#" class="image">--}}
-{{--						<img data-echo="{{asset('user/assets/images/brands/brand5.png')}}" src="{{asset('user\assets\images\blank.gif')}}" alt="">--}}
-{{--					</a>	--}}
-{{--				</div><!--/.item-->--}}
-{{--		    </div><!-- /.owl-carousel #logo-slider -->--}}
-{{--		</div><!-- /.logo-slider-inner -->--}}
-{{--	--}}
-{{--</div><!-- /.logo-slider -->--}}
-{{--<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div>--}}
-{{--</div>--}}
+                    <div class="about-section text-center">
+                        <h2>Join the TrolleyWay Family</h2>
+                        <p>With over 500,000 satisfied customers and growing, we're revolutionizing online shopping in South Africa.</p>
+                        <a href="{{url('/login')}}" class="btn btn-primary btn-upper">Create Account</a>
+                        <a href="{{url('/seller')}}" class="btn btn-default btn-upper">Become a Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection

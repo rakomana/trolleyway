@@ -81,9 +81,7 @@ class ShopController extends Controller
         $seller->save();
 
         //Create primary admin of the shop
-        $role = $this->role->firstOrNew(['name' => EnumRole::SuperAdmin]);
-        $role->name = EnumRole::PrimaryAdmin;
-        $role->name = GuardNames::Seller;
+        $role = $this->role->firstOrNew(['name' => EnumRole::PrimaryAdmin, 'guard_name' => GuardNames::Seller]);
         $role->save();
 
         // Attach all [seller] permissions to the role
